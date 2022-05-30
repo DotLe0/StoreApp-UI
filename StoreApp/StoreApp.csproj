@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39520EB8-A684-4510-9D2D-01CAFBAE0D41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StoreApp</RootNamespace>
+    <AssemblyName>StoreApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Stuff.cs" />
+    <Compile Include="User Controls\ChairsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ChairsUC.Designer.cs">
+      <DependentUpon>ChairsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\HomeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\HomeUC.Designer.cs">
+      <DependentUpon>HomeUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\KayboardsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\KayboardsUC.Designer.cs">
+      <DependentUpon>KayboardsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\MausesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\MausesUC.Designer.cs">
+      <DependentUpon>MausesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\MonitorsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\MonitorsUC.Designer.cs">
+      <DependentUpon>MonitorsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\ShopingCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ShopingCard.Designer.cs">
+      <DependentUpon>ShopingCard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="User Controls\ChairsUC.resx">
+      <DependentUpon>ChairsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\HomeUC.resx">
+      <DependentUpon>HomeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\KayboardsUC.resx">
+      <DependentUpon>KayboardsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\MausesUC.resx">
+      <DependentUpon>MausesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\MonitorsUC.resx">
+      <DependentUpon>MonitorsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ShopingCard.resx">
+      <DependentUpon>ShopingCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mausee1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mauseee3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mausee2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
